@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">로봇고 웹뷰</string>
+    <string name="text_hello">안녕하세요. 서울로봇고 검색입니다.</string>
+</resources>

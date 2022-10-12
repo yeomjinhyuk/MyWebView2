@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="10dp">
+
+        <EditText
+            android:id="@+id/editUrl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:hint="검색어를 입력하세요."
+            android:singleLine="true"
+            android:textSize="18sp" />
+        <Spinner
+            android:id="@+id/history"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/trash" />
+
+        <ImageButton
+            android:id="@+id/btnGoNaver"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_naver" />
+
+        <ImageButton
+            android:id="@+id/btnGoGoogle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_google" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/previous"
+            android:text="이전" />
+    </LinearLayout>
+
+    <!--    <AutoCompleteTextView-->
+    <!--        android:id="@+id/auto"-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_gravity="center"-->
+    <!--        android:dropDownWidth="wrap_content"-->
+    <!--        android:dropDownVerticalOffset="5dp"-->
+    <!--        android:inputType="textAutoComplete|textAutoCorrect"-->
+    <!--        android:popupBackground="@color/white"-->
+    <!--        android:textColor="#000000"></AutoCompleteTextView>-->
+
+
+    <WebView
+        android:id="@+id/webView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="1dp"
+        android:clickable="true" />
+
+
+</LinearLayout>
